@@ -1,5 +1,7 @@
 package com.example.recyclerview
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
@@ -26,9 +28,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initAdapter() {
-        profileAdapter = ProfileAdapter()
+        profileAdapter = ProfileAdapter { profile ->
+            openYouTube(profile.url)
+        }
 
         recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
         recyclerView.adapter = profileAdapter
+    }
+
+    private fun openYouTube(url: String){
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
     }
 }

@@ -1,5 +1,7 @@
 package com.example.recyclerview.models
 
+import com.example.recyclerview.R
+
 class DataSource {
     companion object{
         fun createDataSet() : ArrayList<Profile> {
@@ -7,65 +9,34 @@ class DataSource {
 
             list.add(
                 Profile(
-                    "gabrielle",
-                    "java",
-                    0
+                    "Foo Fighters",
+                    "These Days",
+                    R.drawable.img_ff,
+                    "https://www.youtube.com/watch?v=YDVAQI-4lto"
                 )
             )
             list.add(
                 Profile(
-                    "gabrielle",
-                    "java",
-                    0
+                    "Nirvana",
+                    "Heart Shaped Box",
+                    R.drawable.img_n,
+                    "https://www.youtube.com/watch?v=n6P0SitRwy8"
                 )
             )
             list.add(
                 Profile(
-                    "gabrielle",
-                    "java",
-                    0
+                    "Avril Lavigne",
+                    "Complicated",
+                    R.drawable.img_a,
+                    "https://www.youtube.com/watch?v=5NPBIwQyPWE"
                 )
             )
             list.add(
                 Profile(
-                    "gabrielle",
-                    "java",
-                    0
-                )
-            )
-            list.add(
-                Profile(
-                    "gabrielle",
-                    "java",
-                    0
-                )
-            )
-            list.add(
-                Profile(
-                    "gabrielle",
-                    "java",
-                    0
-                )
-            )
-            list.add(
-                Profile(
-                    "gabrielle",
-                    "java",
-                    0
-                )
-            )
-            list.add(
-                Profile(
-                    "gabrielle",
-                    "java",
-                    0
-                )
-            )
-            list.add(
-                Profile(
-                    "gabrielle",
-                    "java",
-                    0
+                    "Evanescense",
+                    "Bring Me To Life",
+                    R.drawable.img_e,
+                    "https://www.youtube.com/watch?v=3YxaaGgTQYM"
                 )
             )
             return list
