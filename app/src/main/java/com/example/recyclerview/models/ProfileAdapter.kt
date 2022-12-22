@@ -40,12 +40,12 @@ class ProfileAdapter (private val onClicked: (Profile) -> Unit): RecyclerView.Ad
     ): RecyclerView.ViewHolder(ItemView) {
 
         private val profileName = itemView.name
-        private val profileMusica = itemView.musica
+        private val profileSong = itemView.song
         private val profileImage = itemView.image
 
         fun bind(profile: Profile, onClicked: (Profile) -> Unit){
-            profileName.text = profile.nome
-            profileMusica.text = profile.musica
+            profileName.text = profile.name
+            profileSong.text = profile.song
             profileImage.setImageResource(profile.image)
 
             itemView.setOnClickListener{

@@ -1,8 +1,8 @@
 package com.example.recyclerview.models
 
 data class Profile(
-    var nome: String,
-    var musica: String,
+    var name: String,
+    var song: String,
     var image: Int,
     var url: String
 )
